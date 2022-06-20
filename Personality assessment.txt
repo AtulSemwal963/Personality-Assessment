@@ -1,0 +1,382 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main()
+{
+    char ans;
+    cout<<"WHAT YOUR NAME SAYS ABOUT YOUR PERSONALITY?"<<endl;
+    cout<<endl;
+    cout<<endl;
+    cout<<endl;
+    cout<<"Ever thought your name and personality may have their own colors?."<<endl;
+    cout<<"Let's find out at which part of the rainbow your name feels like home ."<<endl;
+    cout<<"Choose your answers ,track your points and see the result at the end of this assessment."<<endl;
+    cout<<"Question 1"<<endl;
+    cout<<"Are you proud of your name or would you rather change it?"<<endl;
+    cout<<"A- I wish i could get it changed"<<endl; //(40)
+    cout<<"B- I'm proud of my name it's cool"<<endl;//(10)
+    cout<<"C- No one calls me by my real name anyway"<<endl;//(20)
+    cout<<"D- I'm indifferent about it"<<endl;//(30)
+    cout<<"Your answer- ";
+    cin>> ans;
+    int r1;
+    if (ans=='a'){r1=40;}
+    else if (ans=='b'){r1=10;}
+    else if (ans=='c'){r1=20;}
+    else if (ans== 'd'){r1=30;}
+    else {cout<<"Invalid Character"<<endl;}
+    cout<<"Total Points= "<<r1<<endl;
+    cout<<endl;
+    cout<<endl;
+    cout<<"Question 2"<<endl;
+    cout<<"How many nicknames do you currently have?"<<endl;
+    cout<<"A- I lost count"<<endl;//(10)
+    cout<<"B- I don't allow people to twist my name"<<endl;//(40)
+    cout<<"C- Just one"<<endl;//(20)
+    cout<<"D- My name sounds better than any nickname"<<endl;//(30)
+    cout<<"Your answer- ";
+    cin>>ans;
+    int r2;
+    if (ans=='a'){r2=10;}
+    else if (ans=='b'){r2=40;}
+    else if (ans=='c'){r2=20;}
+    else if (ans== 'd'){r2=30;}
+    else {cout<<"Invalid Character"<<endl;}
+    cout<<"Total Points= "<<r1+r2<<endl;
+    cout<<endl;
+    cout<<endl;
+    cout<<"Question 3"<<endl;
+    cout<<"Do you find other people have a hard time remembering your name?"<<endl;
+    cout<<"A- Nope, i'm unforgettable"<<endl;//20
+    cout<<"B- Even my mom confuses my name"<<endl;//40
+    cout<<"C- I don't know"<<endl;//10
+    cout<<"D- Yes and it bothers me"<<endl;//30
+    cout<<"Your answer- ";
+    cin>>ans;
+    int r3;
+    if (ans=='a'){r3=20;}
+    else if (ans=='b'){r3=40;}
+    else if (ans=='c'){r3=10;}
+    else if (ans== 'd'){r3=30;}
+    else {cout<<"Invalid Character"<<endl;}
+    cout<<"Total Points= "<<r1+r2+r3<<endl;
+    cout<<endl;
+    cout<<endl;
+    cout<<"Question 4"<<endl;
+    cout<<"What flower does your name remind you of?"<<endl;
+    cout<<"A- Daisies, warm and playful"<<endl;//10
+    cout<<"B- Roses ,royal and attractive"<<endl;//40
+    cout<<"C- Lily's beautiful and mysterious"<<endl;//20
+    cout<<"D- Cactus independent and defensive"<<endl;//30
+     cout<<"Your answer- ";
+    cin>>ans;
+    int r4;
+    if (ans=='a'){r4=10;}
+    else if (ans=='b'){r4=40;}
+    else if (ans=='c'){r4=20;}
+    else if (ans== 'd'){r4=30;}
+    else {cout<<"Invalid Character"<<endl;}
+    cout<<"Total Points= "<<r1+r2+r3+r4<<endl;
+    cout<<endl;
+    cout<<endl;
+    cout<<"Question 5"<<endl;
+    cout<<"Is your name specific to a certain gender or is it more universal?"<<endl;
+    cout<<"A- It is universal"<<endl;//40
+    cout<<"B- I don't know it's too rare"<<endl;//10
+    cout<<"C- I guess it depends on the country"<<endl;//20
+    cout<<"D- It's specific to a certain gender"<<endl;//30
+     cout<<"Your answer- ";
+    cin>>ans;
+    int r5;
+    if (ans=='a'){r5=40;}
+    else if (ans=='b'){r5=10;}
+    else if (ans=='c'){r5=20;}
+    else if (ans== 'd'){r5=30;}
+    else {cout<<"Invalid Character"<<endl;}
+    cout<<"Total Points= "<<r1+r2+r3+r4+r5<<endl;
+    cout<<endl;
+    cout<<endl;
+    cout<<"Question 6"<<endl;
+    cout<<"Is it hard for other people to pronounce your name properly?"<<endl;
+    cout<<"A- No not at all"<<endl;//10
+    cout<<"B- It's hard even for me"<<endl;//40
+    cout<<"C- Sometimes"<<endl;//20
+    cout<<"D- Yes and it bothers me"<<endl;//30
+    cout<<"Your answer- ";
+    cin>>ans;
+    int r6;
+    if (ans=='a'){r6=10;}
+    else if (ans=='b'){r6=40;}
+    else if (ans=='c'){r6=20;}
+    else if (ans== 'd'){r6=30;}
+    else {cout<<"Invalid Character"<<endl;}
+    cout<<"Total Points= "<<r1+r2+r3+r4+r5+r6<<endl;
+    cout<<endl;
+    cout<<endl;
+    cout<<"Question 7"<<endl;
+    cout<<"Which one is longer your first name or your last?"<<endl;
+    cout<<"A-Both of my names are equal in length"<<endl;//10
+    cout<<"B- My first name"<<endl;//40
+    cout<<"C- My last name"<<endl;//30
+    cout<<"D- My middle name"<<endl;//20
+     cout<<"Your answer- ";
+    cin>>ans;
+    int r7;
+    if (ans=='a'){r7=10;}
+    else if (ans=='b'){r7=40;}
+    else if (ans=='c'){r7=30;}
+    else if (ans== 'd'){r7=20;}
+    else {cout<<"Invalid Character"<<endl;}
+    cout<<"Total Points= "<<r1+r2+r3+r4+r5+r6+r7<<endl;
+    cout<<endl;
+    cout<<endl;
+    cout<<"Question 8"<<endl;
+    cout<<"Do you know any celebrities who shares your name?"<<endl;
+    cout<<"A- Yes it's very popular"<<endl;//40
+    cout<<"B- No nobody else has my name"<<endl;//10
+    cout<<"C- I'm a celebrity myself"<<endl;//20
+    cout<<"D- Just one or two celebrities"<<endl;//30
+     cout<<"Your answer- ";
+    cin>>ans;
+    int r8;
+    if (ans=='a'){r8=40;}
+    else if (ans=='b'){r8=10;}
+    else if (ans=='c'){r8=20;}
+    else if (ans== 'd'){r8==30;}
+    else {cout<<"Invalid Character"<<endl;}
+    cout<<"Total Points= "<<r1+r2+r3+r4+r5+r6+r7+r8<<endl;
+    cout<<endl;
+    cout<<endl;
+    cout<<"Question 9"<<endl;
+    cout<<"Would you describe your first name as more modern or vintage?"<<endl;
+    cout<<"A- Very modern"<<endl;//30
+    cout<<"B- Vintage"<<endl;//10
+    cout<<"C- Actually it's pretty ancient "<<endl;//40
+    cout<<"D- It sounds like both"<<endl;//20
+    cout<<"Your answer- ";
+    cin>>ans;
+    int r9;
+    if (ans=='a'){r9=30;}
+    else if (ans=='b'){r9=10;}
+    else if (ans=='c'){r9=40;}
+    else if (ans== 'd'){r9=20;}
+    else {cout<<"Invalid Character"<<endl;}
+    cout<<"Total Points= "<<r1+r2+r3+r4+r5+r6+r7+r8+r9<<endl;
+    cout<<endl;
+    cout<<endl;
+    cout<<"Question 10"<<endl;
+    cout<<"Does your name have any spiritual meanings to it?"<<endl;
+    cout<<"A- Oh yeah my parents did the homework"<<endl;//40
+    cout<<"B- I'm not really sure"<<endl;//10
+    cout<<"C- Yes and it means a lot to me"<<endl;//30
+    cout<<"D- I don't think my name means anything specific"<<endl;//20
+     cout<<"Your answer- ";
+    cin>>ans;
+    int r10;
+    if (ans=='a'){r10=40;}
+    else if (ans=='b'){r10=10;}
+    else if (ans=='c'){r10=30;}
+    else if (ans== 'd'){r10=20;}
+    else {cout<<"Invalid Character"<<endl;}
+    cout<<"Total Points= "<<r1+r2+r3+r4+r5+r6+r7+r8+r9+r10<<endl;
+    cout<<endl;
+    cout<<endl;
+    cout<<"Question 11"<<endl;
+    cout<<" What music genre would you associate your name with?"<<endl;
+    cout<<"A-Classic music"<<endl;//40
+    cout<<"B- Indie pop"<<endl;//10
+    cout<<"C- Rap"<<endl;//30
+    cout<<"D- Hard rock"<<endl;//20
+     cout<<"Your answer- ";
+    cin>>ans;
+    int r11;
+    if (ans=='a'){r11=40;}
+    else if (ans=='b'){r11=10;}
+    else if (ans=='c'){r11=30;}
+    else if (ans== 'd'){r11=20;}
+    else {cout<<"Invalid Character"<<endl;}
+    cout<<"Total Points= "<<r1+r2+r3+r4+r5+r6+r7+r8+r9+r10+r11<<endl;
+    cout<<endl;
+    cout<<endl;
+    cout<<"Question 12"<<endl;
+     cout<<"How would you feel if you met someone else with your exact first and last name?"<<endl;
+    cout<<"A- Oh wow ! a glitch in the matrix"<<endl;//10
+    cout<<"B- Indifferent it's pretty common"<<endl;//20
+    cout<<"C- Jealous"<<endl;//30
+    cout<<"D- I would make friends with this person"<<endl;//40
+     cout<<"Your answer- ";
+    cin>>ans;
+    int r12;
+    if (ans=='a'){r12=10;}
+    else if (ans=='b'){r12=20;}
+    else if (ans=='c'){r12=30;}
+    else if (ans== 'd'){r12=40;}
+    else {cout<<"Invalid Character"<<endl;}
+    cout<<"Total Points= "<<r1+r2+r3+r4+r5+r6+r7+r8+r9+r10+r11+r12<<endl;
+    cout<<endl;
+    cout<<endl;
+    cout<<"Question 13"<<endl;
+     cout<<"Choose a color that you associate with your name"<<endl;
+    cout<<"A- Pink"<<endl;//10
+    cout<<"B- Blue"<<endl;//40
+    cout<<"C- Yellow "<<endl;//20
+    cout<<"D- Orange"<<endl;//30
+     cout<<"Your answer- ";
+    cin>>ans;
+    int r13;
+    if (ans=='a'){r13=10;}
+    else if (ans=='b'){r13=40;}
+    else if (ans=='c'){r13=20;}
+    else if (ans== 'd'){r13=30;}
+    else {cout<<"Invalid Character"<<endl;}
+    cout<<"Total Points= "<<r1+r2+r3+r4+r5+r6+r7+r8+r9+r10+r11+r12+r13<<endl;
+    cout<<endl;
+    cout<<endl;
+    cout<<"Question 14"<<endl;
+     cout<<"What weather matches your name perfectly?"<<endl;
+    cout<<"A- Rainy and fresh"<<endl;//40
+    cout<<"B- Warm and cozy"<<endl;//20
+    cout<<"C- Cold and windy"<<endl;//30
+    cout<<"D- Hot and sunny"<<endl;//10
+     cout<<"Your answer- ";
+    cin>>ans;
+    int r14;
+    if (ans=='a'){r14=40;}
+    else if (ans=='b'){r14=20;}
+    else if (ans=='c'){r14=30;}
+    else if (ans== 'd'){r14=10;}
+    else {cout<<"Invalid Character"<<endl;}
+    cout<<"Total Points= "<<r1+r2+r3+r4+r5+r6+r7+r8+r9+r10+r11+r12+r13+r14<<endl;
+    cout<<endl;
+    cout<<endl;
+    cout<<"Question 15"<<endl;
+     cout<<"What element do you associate your name with?"<<endl;
+    cout<<"A- Fire"<<endl;//10
+    cout<<"B- Earth"<<endl;//40
+    cout<<"C- Water"<<endl;//20
+    cout<<"D- Air"<<endl;//30
+     cout<<"Your answer- ";
+    cin>>ans;
+    int r15;
+    if (ans=='a'){r15=10;}
+    else if (ans=='b'){r15=40;}
+    else if (ans=='c'){r15=20;}
+    else if (ans== 'd'){r15=30;}
+    else {cout<<"Invalid Character"<<endl;}
+    cout<<"Total Points= "<<r1+r2+r3+r4+r5+r6+r7+r8+r9+r10+r11+r12+r13+r14+r15<<endl;
+    cout<<endl;
+    cout<<endl;
+    cout<<"Question 16"<<endl;
+     cout<<"What season matches your name perfectly?"<<endl;
+    cout<<"A- Winter"<<endl;//10
+    cout<<"B- Fall"<<endl;//30
+    cout<<"C- Spring"<<endl;//40
+    cout<<"D- Summer"<<endl;//20
+     cout<<"Your answer- ";
+    cin>>ans;
+    int r16;
+    if (ans=='a'){r16=10;}
+    else if (ans=='b'){r16=30;}
+    else if (ans=='c'){r16=40;}
+    else if (ans== 'd'){r16=20;}
+    else {cout<<"Invalid Character"<<endl;}
+    cout<<"Total Points= "<<r1+r2+r3+r4+r5+r6+r7+r8+r9+r10+r11+r12+r13+r14+r15+r16<<endl;
+    cout<<endl;
+    cout<<endl;
+    cout<<"Question 17"<<endl;
+     cout<<"What food tastes like your name?"<<endl;
+    cout<<"A- Chocolate ice cream"<<endl;//10
+    cout<<"B- Chicken wings"<<endl;//30
+    cout<<"C- French bakery with coffee"<<endl;//20
+    cout<<"D- Sushi"<<endl;//40
+     cout<<"Your answer- ";
+    cin>>ans;
+    int r17;
+    if (ans=='a'){r17=10;}
+    else if (ans=='b'){r17=30;}
+    else if (ans=='c'){r17=20;}
+    else if (ans== 'd'){r17=40;}
+    else {cout<<"Invalid Character"<<endl;}
+    cout<<"Total Points= "<<r1+r2+r3+r4+r5+r6+r7+r8+r9+r10+r11+r12+r13+r14+r15+r16+r17<<endl;
+    cout<<endl;
+    cout<<endl;
+    cout<<"Question 18"<<endl;
+     cout<<"Match your name with the most suitable landscape"<<endl;
+    cout<<"A- Calm and sunny desert"<<endl;//30
+    cout<<"B- Breathtaking mountains"<<endl;//10
+    cout<<"C- Mysterious forest"<<endl;//20
+    cout<<"D- White sands and blue"<<endl;//40
+     cout<<"Your answer- ";
+    cin>>ans;
+    int r18;
+    if (ans=='a'){r18=30;}
+    else if (ans=='b'){r18=10;}
+    else if (ans=='c'){r18=20;}
+    else if (ans== 'd'){r18=40;}
+    else {cout<<"Invalid Character"<<endl;}
+    cout<<"Total Points= "<<r1+r2+r3+r4+r5+r6+r7+r8+r9+r10+r11+r12+r13+r14+r15+r16+r17+r18<<endl;
+    cout<<endl;
+    cout<<endl;
+    cout<<"Question 19"<<endl;
+     cout<<"If your name belonged to some patron deity what would their responsibility be?"<<endl;
+    cout<<"A- Love and relationships"<<endl;//30
+    cout<<"B- Knowledge and arts"<<endl;//40
+    cout<<"C- Warriors"<<endl;//20
+    cout<<"D- Nature"<<endl;//10
+     cout<<"Your answer- ";
+    cin>>ans;
+    int r19;
+    if (ans=='a'){r19=30;}
+    else if (ans=='b'){r19=40;}
+    else if (ans=='c'){r19=20;}
+    else if (ans== 'd'){r19=10;}
+    else {cout<<"Invalid Character"<<endl;}
+    cout<<"Total Points= "<<r1+r2+r3+r4+r5+r6+r7+r8+r9+r10+r11+r12+r13+r14+r15+r16+r17+r18+r19<<endl;
+    cout<<endl;
+    cout<<endl;
+    cout<<"Question 20"<<endl;
+     cout<<"What personal quality is commonly associated with your name?"<<endl;
+    cout<<"A- Faithful and loving"<<endl;//20
+    cout<<"B- Passionate and independent"<<endl;//30
+    cout<<"C- Smart and self-conscious"<<endl;//10
+    cout<<"D- Easy going and open-minded"<<endl;//40
+      cout<<"Your answer- ";
+    cin>>ans;
+    int r20;
+    if (ans=='a'){r20=20;}
+    else if (ans=='b'){r20=30;}
+    else if (ans=='c'){r20=10;}
+    else if (ans== 'd'){r20=40;}
+    else {cout<<"Invalid Character"<<endl;}
+    cout<<"Total Points= "<<r1+r2+r3+r4+r5+r6+r7+r8+r9+r10+r11+r12+r13+r14+r15+r16+r17+r18+r19+r20<<endl;
+    cout<<endl;
+    cout<<endl;
+    int rt=r1+r2+r3+r4+r5+r6+r7+r8+r9+r10+r11+r12+r13+r14+r15+r16+r17+r18+r19+r20;
+    cout<<"Your total score is ="<<rt<<endl;
+    cout<<endl;
+    cout<<endl;
+    if (rt>=200 && rt<=350){cout<<"Your name color is red ."<<endl;
+    cout<<"I'm living in a material world and I'm a material girl"<<endl;
+    cout<<"These song lyrics are definitely about you ."<<endl;
+    cout<<"You radiate health ,energy and the simple joy of just being alive."<<endl;
+    cout<<" Your name says that you deeply care about your friends and family."<<endl;
+    cout<<" People may perceive you as a warm and trustworthy person."<<endl;
+    cout<<"Arts and science may enrich your life with new meanings."<<endl;}
+    else if (rt>=350 && rt<=500){cout<<"Your name is golden ."<<endl;
+    cout<<"It says you're a passionate and a charismatic leader."<<endl;
+    cout<<"Your bright personality lightens up the world and brings hope to even the most hopeless of situations ."<<endl;
+    cout<<"People know they can rely on you but you're picky when it comes to your boundaries and don't allow everyone to use you."<<endl;
+    cout<<" That's why you may feel lonely from time to time but what can you do ,the winner stands alone."<<endl; }
+    else if(rt>=500 && rt<=650){cout<<"You have a blue name."<<endl;
+    cout<<"Your name says you're a very intelligent, calm and mature person."<<endl;
+    cout<<"You enjoy learning new things and teaching others."<<endl;
+    cout<<"Sometimes you tend to overwork and ignore your feelings but deep inside you stay a very romantic person."<<endl;
+    cout<<"With sophisticated taste and a kind heart , people respect your honesty, knowledge and faithfulness."<<endl;}
+    else if (rt>650){cout<<"Your name radiates purple vibes. "<<endl;
+    cout<<"Are you even from this planet?"<<endl;
+    cout<< "that's the question you probably heard many times."<<endl;
+    cout<<"Your name says you're a very spiritual, wise, and open-minded person with unusual destiny and talent."<<endl;
+    cout<<"Your life is full of paradoxes and amazing coincidences and you probably tend to work in creative areas."<<endl;
+    cout<<"You never feel alone even if you're just by yourself because you have this mystical connection with the universe. ."<<endl;}
+    return 0;
+}
